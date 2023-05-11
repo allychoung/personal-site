@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import projects from './projects-data';
+import skills from './skills-data';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'personal-site';
+  projects = projects;
+  skills = skills;
 }
+
