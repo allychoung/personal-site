@@ -42,16 +42,29 @@
   <!-- Skills -->
   <div class="skills-container">
     <h2>Skills</h2>
-    <div class="left-col">
-      <ul>
-        <li><h3>PLs</h3></li>
-        <ng-container *ngFor="let skill of skills['pl']">
-          <li>{{skill.name}}</li>
-        </ng-container>  
-      </ul>
-    </div>
-    <div class="right-col">
-
+    <div class="row">
+      <div class="left-col">
+        <ul>
+          <li><h3>PLs</h3></li>
+          <ng-container *ngFor="let skill of skills['pl']">
+            <li>{{skill.name}}</li>
+          </ng-container>  
+        </ul>
+      </div>
+      <div class="right-col">
+        <ul class="frameworks-skills">
+          <li><h3>Frameworks</h3></li>
+          <ng-container *ngFor="let skill of skills['frameworks']">
+            <li>{{skill.name}}</li>
+          </ng-container>  
+        </ul>
+        <ul class="soft-skills">
+          <li><h3>Soft Skills</h3></li>
+          <ng-container *ngFor="let skill of skills['soft']">
+            <li>{{skill.name}}</li>
+          </ng-container>  
+        </ul>
+      </div>  
     </div>
   </div>
   <!-- Projects -->

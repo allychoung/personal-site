@@ -83,6 +83,7 @@ p {
 
 
 .toolbar #github-logo:hover,
+.toolbar #pdf-logo:hover,
 .toolbar #linkedin-logo:hover {
   opacity: 0.8;
 }
@@ -248,21 +249,52 @@ svg.material-icons:not(:last-child) {
 
 .card ul {
   align-self: start;
+  text-align: left;
 }
 
 .skills-container {
   background-color: white;
   width: 100%;
-  margin-top: 1em;
+  margin: 1em 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: 5px dashed var(--teal-green);
 
-  .left-col ul {
-    background-color: var(--light-purple);
-    padding: 1em;
-    
+  li {
+    list-style: none;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  ul {
+    border-radius: 10px;
+    padding: 1em 3em 1em 3em;
+  }
+  .left-col {
+    width: 50%;
+    // padding: 1em;
+    ul {
+      // width: 80%;
+      background-color: var(--light-purple);
+      height: 100%;
+    }
+  }
+
+  .right-col {
+    width: 50%;
+  }
+
+  .soft-skills {
+    background-color: var(--light-teal);
+  }
+
+  .frameworks-skills {
+    background-color: var(--dark-green);
   }
 }
 
