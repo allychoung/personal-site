@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import projects from './projects-data';
-import skills from './skills-data';
+import projects from '../data/projects-data';
+import skills from '../data/skills-data';
 
 @Component({
   selector: 'app-root',
