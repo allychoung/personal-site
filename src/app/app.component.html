@@ -1,4 +1,4 @@
-<div class="content" role="main">
+<div class="app-content" role="main">
   <!-- Toolbar -->
   <div class="toolbar" role="banner">
     <img
@@ -6,17 +6,17 @@
       alt="Website Logo"
       src="../assets/site-logo.png"
     />
-    <span>Ally Choung's Personal Website</span>
       <div class="spacer"></div>
-      <a aria-label="Resume PDF Form" target="_blank" rel="noopener" href="..." title="Resume">
-        <i id="pdf-logo" class="fa-solid fa-file-pdf fa-2xl" style="color: #ffffff;"></i>
-      </a>
-      <a aria-label="My LinkedIn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/alex-choung/" title="LinkedIn">
-        <i id="linkedin-logo" class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
-      </a>
-      <a aria-label="My GitHub" target="_blank" rel="noopener" href="https://github.com/allychoung" title="GitHub">
-        <i id="github-logo" class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
-      </a>
+      <i id="pdf-logo" class="fa-solid fa-file-pdf fa-2xl logo" style="color: #4E4F50;">
+        <a aria-label="Resume PDF Form" target="_blank" rel="noopener" href="..." title="Resume"></a>
+      </i>
+      <i id="linkedin-logo" class="fa-brands fa-linkedin fa-2xl logo" style="color: #4E4F50;">
+        <a aria-label="My LinkedIn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/alex-choung/" title="LinkedIn"></a>
+      </i>
+      <i id="github-logo" class="fa-brands fa-github fa-2xl logo" style="color: #4E4F50;">
+        <a aria-label="My GitHub" target="_blank" rel="noopener" href="https://github.com/allychoung" title="GitHub"></a>  
+      </i>
+
 
   </div>
 
@@ -57,16 +57,6 @@
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
       <span>Build for Production</span>
     </button>
-  </div>
-
-  <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection.value">
-      <pre *ngSwitchDefault>ng generate component xyz</pre>
-      <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-      <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
-      <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-      <pre *ngSwitchCase="'test'">ng test</pre>
-      <pre *ngSwitchCase="'build'">ng build</pre>
   </div>
 
   <!-- Links -->

@@ -1,20 +1,20 @@
   <div class="home-screen">
   <!--Top Bar-->
-  <div class="top-bar">
-    <div class="left-col">
-      <div class="row in-col">
+  <div class="content-fit-window">
+    <mat-grid-list cols="4" rowHeight="2:1" class="top-bar">
+      <mat-grid-tile      
+        [rowspan]="1"
+        [colspan]="3"
+      >
         <h1 id="header">Hi, I'm Ally.</h1>
-      </div>
-      <!-- <div class="row in-col line"></div> -->
-      <div class="row in-col text-surround">
-        <span id="about-me">I'm currently a fourth-year undergraduate student at Northeastern University studying Computer Science and English. My main interests include full-stack development, with a focus on frontend development and UI, and ...</span>  
-      </div>
-    </div>
-    <div class="right-col">
-      <div class="in-col">
-        <img src="../assets/ally-profile.jpg" height="200">
-      </div>
-    </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="2">
+        <img src="../assets/ally-profile.jpg" height="200px">
+      </mat-grid-tile>
+      <mat-grid-tile [rowspan]="1" [colspan]="3">
+        <p id="about-me">I'm currently a fourth-year undergraduate student at Northeastern University studying Computer Science and English. My main interests include full-stack development, with a focus on frontend development and UI, and ...</p>  
+      </mat-grid-tile>
+    </mat-grid-list>  
   </div>
 
 
